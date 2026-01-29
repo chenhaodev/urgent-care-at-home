@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": 1,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 65,
+    "symptoms": "Severe dyspnea at rest, orthopnea, frothy sputum, leg edema",
+    "medical_history": "CHF, hypertension",
+    "triage_level": "emergency",
+    "rationale": "Acute pulmonary edema"
+  },
+  {
+    "case_id": 2,
+    "protocol_category": "Chest Pain",
+    "patient_age": 68,
+    "symptoms": "Weight gain 5kg in 2 days, increasing dyspnea, ankle swelling",
+    "medical_history": "CHF on diuretics",
+    "triage_level": "urgent",
+    "rationale": "CHF exacerbation"
+  }
+]

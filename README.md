@@ -18,6 +18,19 @@ This agent performs medical triage by:
 
 **Key Feature**: DSPy optimization ensures **100% detection of emergency symptoms** (zero tolerance for missed red flags).
 
+### 🆕 NEW: Specialized Nurse Agents
+
+Instead of one generic agent, optimize **multiple specialized "remote nurses"** for specific domains:
+- **CHF Nurse** → Cardiac/heart failure specialist
+- **PreOp Nurse** → Pre-operative surgical screening
+- **ED Nurse** → Emergency department/trauma
+- **Pediatric Nurse** → Child health specialist
+- **Respiratory Nurse** → Breathing issues/COPD/asthma
+
+Each nurse is optimized with **domain-specific training data** for higher accuracy in their specialty.
+
+📖 **See [SPECIALIZED_NURSES.md](SPECIALIZED_NURSES.md) for full documentation**
+
 ---
 
 ## Quick Start
