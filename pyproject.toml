@@ -1,0 +1,71 @@
+[project]
+name = "stcc-triage-agent"
+version = "1.0.0"
+description = "AI-powered medical triage using DSPy framework and DeepSeek reasoning engine"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "STCC Triage Agent Contributors"}
+]
+keywords = ["medical", "triage", "dspy", "deepseek", "ai", "healthcare"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "dspy-ai>=2.5.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+api = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/stcc-triage-agent"
+Repository = "https://github.com/yourusername/stcc-triage-agent"
+Documentation = "https://github.com/yourusername/stcc-triage-agent#readme"
+Issues = "https://github.com/yourusername/stcc-triage-agent/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["validation"]
+python_files = "test_*.py"
+python_functions = "test_*"
+addopts = "-v --tb=short"
