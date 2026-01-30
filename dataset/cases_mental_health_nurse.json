@@ -1,20 +1,47 @@
 [
   {
-    "case_id": 600,
-    "protocol_category": "Anxiety",
-    "patient_age": 50,
-    "symptoms": "anxiety - emergency case",
-    "medical_history": "Test case",
+    "case_id": 501,
+    "protocol_category": "Suicide_Attempt_Threat",
+    "patient_age": 32,
+    "symptoms": "Took overdose of pills 30 minutes ago, expressing desire to die, lethargic",
+    "medical_history": "Depression, previous attempts",
     "triage_level": "emergency",
-    "rationale": "Test emergency case for Mental Health Nurse"
+    "rationale": "Active suicide attempt, immediate medical and psychiatric care"
   },
   {
-    "case_id": 601,
+    "case_id": 502,
+    "protocol_category": "Altered_Mental_Status_AMS",
+    "patient_age": 28,
+    "symptoms": "Hallucinating, agitated, threatening harm to others, not oriented",
+    "medical_history": "Schizophrenia, medication non-compliance",
+    "triage_level": "emergency",
+    "rationale": "Acute psychotic episode with danger to self/others"
+  },
+  {
+    "case_id": 503,
     "protocol_category": "Anxiety",
-    "patient_age": 45,
-    "symptoms": "anxiety - urgent case",
-    "medical_history": "Test case",
+    "patient_age": 35,
+    "symptoms": "Severe panic attack for 1 hour, chest pain, hyperventilating, can't calm down",
+    "medical_history": "Panic disorder",
     "triage_level": "urgent",
-    "rationale": "Test urgent case for Mental Health Nurse"
+    "rationale": "Severe panic attack, needs medical evaluation and crisis intervention"
+  },
+  {
+    "case_id": 504,
+    "protocol_category": "Anxiety",
+    "patient_age": 40,
+    "symptoms": "Increased anxiety for 2 weeks, difficulty sleeping, worried about work stress",
+    "medical_history": "No psychiatric history",
+    "triage_level": "moderate",
+    "rationale": "New onset anxiety, needs evaluation and counseling"
+  },
+  {
+    "case_id": 505,
+    "protocol_category": "Anxiety",
+    "patient_age": 30,
+    "symptoms": "Mild stress from life changes, sleeping okay, functioning normally, seeking advice",
+    "medical_history": "None",
+    "triage_level": "home_care",
+    "rationale": "Normal stress response, education and coping strategies"
   }
 ]

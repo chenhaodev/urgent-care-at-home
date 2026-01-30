@@ -1,0 +1,515 @@
+[
+  {
+    "case_id": 101,
+    "protocol_category": "Bleeding_Severe",
+    "patient_age": 35,
+    "symptoms": "Deep laceration to forearm, bright red blood spurting, unable to control with direct pressure",
+    "medical_history": "No bleeding disorders",
+    "triage_level": "emergency",
+    "rationale": "Arterial bleeding, life-threatening hemorrhage"
+  },
+  {
+    "case_id": 102,
+    "protocol_category": "Burns_Thermal",
+    "patient_age": 45,
+    "symptoms": "Second-degree burns covering 20% body surface, severe pain, blistering on chest and arms",
+    "medical_history": "House fire injury",
+    "triage_level": "emergency",
+    "rationale": "Major burn requiring immediate care, fluid resuscitation needed"
+  },
+  {
+    "case_id": 103,
+    "protocol_category": "Laceration",
+    "patient_age": 28,
+    "symptoms": "4cm laceration on leg from broken glass, bleeding controlled, but deep, gaping wound",
+    "medical_history": "Tetanus shot 3 years ago",
+    "triage_level": "urgent",
+    "rationale": "Deep laceration requiring suturing, evaluation within hours"
+  },
+  {
+    "case_id": 104,
+    "protocol_category": "Burns_Thermal",
+    "patient_age": 32,
+    "symptoms": "Small first-degree burn on hand from cooking, red and painful, no blistering",
+    "medical_history": "None",
+    "triage_level": "moderate",
+    "rationale": "Minor burn, outpatient wound care"
+  },
+  {
+    "case_id": 105,
+    "protocol_category": "Abrasions",
+    "patient_age": 25,
+    "symptoms": "Scraped knee from bicycle fall, cleaned and covered, no active bleeding",
+    "medical_history": "Up to date on tetanus",
+    "triage_level": "home_care",
+    "rationale": "Minor abrasion, home wound care appropriate"
+  },
+  {
+    "case_id": 201,
+    "protocol_category": "Pregnancy_Suspected_Labor",
+    "patient_age": 28,
+    "symptoms": "30 weeks pregnant, regular contractions every 5 minutes, vaginal pressure",
+    "medical_history": "First pregnancy",
+    "triage_level": "emergency",
+    "rationale": "Preterm labor at 30 weeks, immediate evaluation needed"
+  },
+  {
+    "case_id": 202,
+    "protocol_category": "Pregnancy_Vaginal_Bleeding",
+    "patient_age": 26,
+    "symptoms": "20 weeks pregnant, heavy vaginal bleeding with clots, severe cramping",
+    "medical_history": "Previous miscarriage",
+    "triage_level": "emergency",
+    "rationale": "Significant bleeding in pregnancy, possible placental abruption"
+  },
+  {
+    "case_id": 203,
+    "protocol_category": "Pregnancy_Fetal_Movement_Problems",
+    "patient_age": 32,
+    "symptoms": "36 weeks pregnant, noticed decreased fetal movement for past 6 hours",
+    "medical_history": "Uncomplicated pregnancy",
+    "triage_level": "urgent",
+    "rationale": "Decreased fetal movement requires prompt assessment"
+  },
+  {
+    "case_id": 204,
+    "protocol_category": "Pregnancy_Nausea_and_Vomiting",
+    "patient_age": 25,
+    "symptoms": "8 weeks pregnant, persistent nausea and vomiting, able to keep some fluids down",
+    "medical_history": "First trimester",
+    "triage_level": "moderate",
+    "rationale": "Morning sickness, evaluation and treatment options"
+  },
+  {
+    "case_id": 205,
+    "protocol_category": "Breastfeeding_Problems",
+    "patient_age": 30,
+    "symptoms": "2 weeks postpartum, asking about proper latch technique, no fever or severe pain",
+    "medical_history": "First baby",
+    "triage_level": "home_care",
+    "rationale": "Routine breastfeeding education"
+  },
+  {
+    "case_id": 301,
+    "protocol_category": "Stroke_Suspected",
+    "patient_age": 68,
+    "symptoms": "Sudden right-sided weakness, facial droop, slurred speech, started 30 minutes ago",
+    "medical_history": "Hypertension, atrial fibrillation",
+    "triage_level": "emergency",
+    "rationale": "Acute stroke symptoms, immediate evaluation for thrombolytics"
+  },
+  {
+    "case_id": 302,
+    "protocol_category": "Seizure",
+    "patient_age": 45,
+    "symptoms": "Generalized tonic-clonic seizure lasting >5 minutes, unresponsive",
+    "medical_history": "Epilepsy, missed medication",
+    "triage_level": "emergency",
+    "rationale": "Status epilepticus, immediate intervention needed"
+  },
+  {
+    "case_id": 303,
+    "protocol_category": "Headache",
+    "patient_age": 42,
+    "symptoms": "Worst headache of life, sudden onset, photophobia, stiff neck",
+    "medical_history": "No previous severe headaches",
+    "triage_level": "urgent",
+    "rationale": "Possible subarachnoid hemorrhage, urgent evaluation"
+  },
+  {
+    "case_id": 304,
+    "protocol_category": "Seizure",
+    "patient_age": 35,
+    "symptoms": "Brief seizure 2 hours ago, now alert and oriented, taking anti-epileptics",
+    "medical_history": "Known epilepsy, well-controlled",
+    "triage_level": "moderate",
+    "rationale": "Post-ictal, stable, needs evaluation"
+  },
+  {
+    "case_id": 305,
+    "protocol_category": "Headache",
+    "patient_age": 30,
+    "symptoms": "Tension headache for 1 day, responds to ibuprofen, no neurological symptoms",
+    "medical_history": "Frequent tension headaches",
+    "triage_level": "home_care",
+    "rationale": "Benign tension headache, home management"
+  },
+  {
+    "case_id": 401,
+    "protocol_category": "Abdominal_Pain_Adult",
+    "patient_age": 45,
+    "symptoms": "Severe abdominal pain with rigid abdomen, fever 39°C, rebound tenderness, vomiting",
+    "medical_history": "Appendectomy 10 years ago",
+    "triage_level": "emergency",
+    "rationale": "Acute abdomen with peritonitis signs, surgical emergency"
+  },
+  {
+    "case_id": 402,
+    "protocol_category": "Vomiting_Adult",
+    "patient_age": 38,
+    "symptoms": "Vomiting for 24 hours, unable to keep fluids down, dizzy when standing, dry mouth",
+    "medical_history": "None",
+    "triage_level": "urgent",
+    "rationale": "Dehydration from persistent vomiting, needs IV fluids"
+  },
+  {
+    "case_id": 403,
+    "protocol_category": "Rectal_Bleeding",
+    "patient_age": 55,
+    "symptoms": "Bright red blood in stool, moderate amount, ongoing for 2 days, fatigue",
+    "medical_history": "No previous GI bleeding",
+    "triage_level": "urgent",
+    "rationale": "Active GI bleeding requires prompt evaluation"
+  },
+  {
+    "case_id": 404,
+    "protocol_category": "Abdominal_Pain_Adult",
+    "patient_age": 35,
+    "symptoms": "Cramping abdominal pain with diarrhea for 2 days, no fever, tolerating fluids",
+    "medical_history": "None",
+    "triage_level": "moderate",
+    "rationale": "Likely gastroenteritis, evaluation and supportive care"
+  },
+  {
+    "case_id": 405,
+    "protocol_category": "Indigestion",
+    "patient_age": 40,
+    "symptoms": "Mild heartburn after spicy meal, responds to antacids",
+    "medical_history": "Occasional reflux",
+    "triage_level": "home_care",
+    "rationale": "Simple indigestion, home management appropriate"
+  },
+  {
+    "case_id": 501,
+    "protocol_category": "Suicide_Attempt_Threat",
+    "patient_age": 32,
+    "symptoms": "Took overdose of pills 30 minutes ago, expressing desire to die, lethargic",
+    "medical_history": "Depression, previous attempts",
+    "triage_level": "emergency",
+    "rationale": "Active suicide attempt, immediate medical and psychiatric care"
+  },
+  {
+    "case_id": 502,
+    "protocol_category": "Altered_Mental_Status_AMS",
+    "patient_age": 28,
+    "symptoms": "Hallucinating, agitated, threatening harm to others, not oriented",
+    "medical_history": "Schizophrenia, medication non-compliance",
+    "triage_level": "emergency",
+    "rationale": "Acute psychotic episode with danger to self/others"
+  },
+  {
+    "case_id": 503,
+    "protocol_category": "Anxiety",
+    "patient_age": 35,
+    "symptoms": "Severe panic attack for 1 hour, chest pain, hyperventilating, can't calm down",
+    "medical_history": "Panic disorder",
+    "triage_level": "urgent",
+    "rationale": "Severe panic attack, needs medical evaluation and crisis intervention"
+  },
+  {
+    "case_id": 504,
+    "protocol_category": "Anxiety",
+    "patient_age": 40,
+    "symptoms": "Increased anxiety for 2 weeks, difficulty sleeping, worried about work stress",
+    "medical_history": "No psychiatric history",
+    "triage_level": "moderate",
+    "rationale": "New onset anxiety, needs evaluation and counseling"
+  },
+  {
+    "case_id": 505,
+    "protocol_category": "Anxiety",
+    "patient_age": 30,
+    "symptoms": "Mild stress from life changes, sleeping okay, functioning normally, seeking advice",
+    "medical_history": "None",
+    "triage_level": "home_care",
+    "rationale": "Normal stress response, education and coping strategies"
+  },
+  {
+    "case_id": 1,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 65,
+    "symptoms": "Severe shortness of breath at rest, orthopnea, frothy pink sputum, bilateral leg edema",
+    "medical_history": "History of CHF, hypertension, diabetes",
+    "triage_level": "emergency",
+    "rationale": "Acute pulmonary edema, immediate intervention needed"
+  },
+  {
+    "case_id": 2,
+    "protocol_category": "Chest Pain",
+    "patient_age": 72,
+    "symptoms": "Chest pain, severe dyspnea, cold extremities, blood pressure 85/50, heart rate 120",
+    "medical_history": "CHF, previous MI",
+    "triage_level": "emergency",
+    "rationale": "Cardiogenic shock, critical instability"
+  },
+  {
+    "case_id": 3,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 68,
+    "symptoms": "Weight gain 5kg in 2 days, increasing dyspnea on exertion, ankle swelling worsening",
+    "medical_history": "Known CHF on diuretics",
+    "triage_level": "urgent",
+    "rationale": "CHF exacerbation, needs medical evaluation within hours"
+  },
+  {
+    "case_id": 4,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 58,
+    "symptoms": "Missed diuretic doses for 3 days, now with dyspnea, orthopnea, leg swelling",
+    "medical_history": "CHF, medication non-compliance",
+    "triage_level": "urgent",
+    "rationale": "Fluid overload from medication non-compliance"
+  },
+  {
+    "case_id": 5,
+    "protocol_category": "Swelling",
+    "patient_age": 55,
+    "symptoms": "Mild increase in ankle swelling, slight increase in dyspnea with exertion",
+    "medical_history": "Controlled CHF on medications",
+    "triage_level": "moderate",
+    "rationale": "Early signs of decompensation, outpatient evaluation needed"
+  },
+  {
+    "case_id": 6,
+    "protocol_category": "CHF Management",
+    "patient_age": 60,
+    "symptoms": "Stable, taking medications regularly, asking about dietary sodium guidelines",
+    "medical_history": "Stable CHF",
+    "triage_level": "home_care",
+    "rationale": "Routine CHF management question, education needed"
+  },
+  {
+    "case_id": 801,
+    "protocol_category": "Fever",
+    "patient_age": 45,
+    "symptoms": "45-year-old scheduled for surgery tomorrow, now has fever 39°C, severe cough, productive sputum, shortness of breath",
+    "medical_history": "Scheduled for elective surgery",
+    "triage_level": "emergency",
+    "rationale": "Active infection, surgery contraindicated, needs immediate treatment"
+  },
+  {
+    "case_id": 802,
+    "protocol_category": "Chest_Pain",
+    "patient_age": 62,
+    "symptoms": "62-year-old preop patient with new onset chest pain radiating to left arm, diaphoresis, scheduled for hip surgery in 2 days",
+    "medical_history": "Hypertension, scheduled for hip replacement",
+    "triage_level": "emergency",
+    "rationale": "Acute cardiac event, immediate evaluation needed"
+  },
+  {
+    "case_id": 803,
+    "protocol_category": "Hypertension",
+    "patient_age": 58,
+    "symptoms": "58-year-old preop assessment, blood pressure 180/110, history of hypertension, scheduled for surgery in 5 days",
+    "medical_history": "Poorly controlled hypertension",
+    "triage_level": "urgent",
+    "rationale": "Uncontrolled hypertension, needs optimization before surgery"
+  },
+  {
+    "case_id": 804,
+    "protocol_category": "Bleeding_Risk",
+    "patient_age": 50,
+    "symptoms": "50-year-old preop, reports taking aspirin and clopidogrel, orthopedic surgery scheduled in 3 days, no one told patient to stop",
+    "medical_history": "Cardiac stents, on antiplatelet therapy",
+    "triage_level": "urgent",
+    "rationale": "Bleeding risk, medication adjustment needed urgently"
+  },
+  {
+    "case_id": 805,
+    "protocol_category": "Anxiety",
+    "patient_age": 48,
+    "symptoms": "48-year-old preop assessment, mild anxiety about anesthesia, wants to discuss concerns, surgery in 1 week",
+    "medical_history": "No significant medical history",
+    "triage_level": "moderate",
+    "rationale": "Routine preop anxiety, counseling needed"
+  },
+  {
+    "case_id": 806,
+    "protocol_category": "Preop_Education",
+    "patient_age": 40,
+    "symptoms": "40-year-old preop patient, asking about fasting instructions for surgery next week",
+    "medical_history": "Healthy, scheduled for elective surgery",
+    "triage_level": "home_care",
+    "rationale": "Routine preop education question"
+  },
+  {
+    "case_id": 701,
+    "protocol_category": "Head_Injury",
+    "patient_age": 35,
+    "symptoms": "35-year-old motor vehicle accident, unresponsive, GCS 6, obvious head trauma, hypotensive",
+    "medical_history": "No prior medical history",
+    "triage_level": "emergency",
+    "rationale": "Severe trauma, immediate resuscitation needed"
+  },
+  {
+    "case_id": 702,
+    "protocol_category": "Headache",
+    "patient_age": 28,
+    "symptoms": "28-year-old with sudden severe headache 'worst of my life', stiff neck, photophobia, vomiting",
+    "medical_history": "No history of migraines",
+    "triage_level": "emergency",
+    "rationale": "Possible subarachnoid hemorrhage, immediate imaging needed"
+  },
+  {
+    "case_id": 703,
+    "protocol_category": "Chest_Pain",
+    "patient_age": 55,
+    "symptoms": "55-year-old with crushing substernal chest pain 30 minutes, radiation to jaw, diaphoresis, nausea",
+    "medical_history": "Hypertension, smoker",
+    "triage_level": "emergency",
+    "rationale": "STEMI protocol, immediate cath lab activation"
+  },
+  {
+    "case_id": 704,
+    "protocol_category": "Fall_Injury",
+    "patient_age": 70,
+    "symptoms": "70-year-old fell at home, severe hip pain, unable to walk, leg shortened and rotated",
+    "medical_history": "Osteoporosis, hypertension",
+    "triage_level": "emergency",
+    "rationale": "Hip fracture, pain management and surgical evaluation"
+  },
+  {
+    "case_id": 705,
+    "protocol_category": "Abdominal_Pain_Adult",
+    "patient_age": 42,
+    "symptoms": "42-year-old with severe abdominal pain 6 hours, right lower quadrant, fever 38.5°C, rebound tenderness",
+    "medical_history": "No prior abdominal surgeries",
+    "triage_level": "urgent",
+    "rationale": "Possible appendicitis, surgical evaluation needed"
+  },
+  {
+    "case_id": 706,
+    "protocol_category": "Fever_Child",
+    "patient_age": 8,
+    "symptoms": "8-year-old with high fever 40°C, severe headache, neck stiffness, petechial rash",
+    "medical_history": "Up to date on vaccinations",
+    "triage_level": "urgent",
+    "rationale": "Possible meningitis, urgent workup needed"
+  },
+  {
+    "case_id": 707,
+    "protocol_category": "Ankle_Injury",
+    "patient_age": 32,
+    "symptoms": "32-year-old with ankle sprain after sports, moderate swelling, able to bear some weight",
+    "medical_history": "Active, no prior injuries",
+    "triage_level": "moderate",
+    "rationale": "Likely sprain, X-ray and assessment needed"
+  },
+  {
+    "case_id": 708,
+    "protocol_category": "Abrasions",
+    "patient_age": 25,
+    "symptoms": "25-year-old with minor abrasion on arm, cleaned at home, asking about infection signs",
+    "medical_history": "Healthy, tetanus up to date",
+    "triage_level": "home_care",
+    "rationale": "Minor injury, education on wound care"
+  },
+  {
+    "case_id": 601,
+    "protocol_category": "Fever_Child",
+    "patient_age": 1,
+    "symptoms": "6-month-old with fever 40°C, lethargic, poor feeding, weak cry, fontanelle bulging",
+    "medical_history": "Healthy infant, no chronic conditions",
+    "triage_level": "emergency",
+    "rationale": "Infant with concerning signs, possible meningitis or sepsis"
+  },
+  {
+    "case_id": 602,
+    "protocol_category": "Breathing_Problems_Child",
+    "patient_age": 2,
+    "symptoms": "2-year-old with severe difficulty breathing, retractions, nasal flaring, O2 sat 88% on room air, wheezing",
+    "medical_history": "History of asthma",
+    "triage_level": "emergency",
+    "rationale": "Respiratory distress, immediate intervention needed"
+  },
+  {
+    "case_id": 603,
+    "protocol_category": "Ear_Pain",
+    "patient_age": 4,
+    "symptoms": "4-year-old with high fever 39.5°C for 2 days, pulling at ear, crying, not eating well",
+    "medical_history": "Previous ear infections",
+    "triage_level": "urgent",
+    "rationale": "Likely otitis media, needs evaluation and treatment"
+  },
+  {
+    "case_id": 604,
+    "protocol_category": "Vomiting_Child",
+    "patient_age": 2,
+    "symptoms": "18-month-old with vomiting and diarrhea for 2 days, decreased wet diapers, dry lips, lethargic",
+    "medical_history": "No chronic conditions",
+    "triage_level": "urgent",
+    "rationale": "Dehydration signs, needs assessment"
+  },
+  {
+    "case_id": 605,
+    "protocol_category": "Fever_Child",
+    "patient_age": 5,
+    "symptoms": "5-year-old with fever 38.5°C, runny nose, cough for 3 days, eating and drinking okay",
+    "medical_history": "Healthy child",
+    "triage_level": "moderate",
+    "rationale": "Upper respiratory infection, routine evaluation"
+  },
+  {
+    "case_id": 606,
+    "protocol_category": "Cough",
+    "patient_age": 3,
+    "symptoms": "3-year-old with mild runny nose, no fever, eating and playing normally",
+    "medical_history": "Healthy child",
+    "triage_level": "home_care",
+    "rationale": "Mild URI, supportive care at home"
+  },
+  {
+    "case_id": 901,
+    "protocol_category": "Shortness_of_Breath",
+    "patient_age": 58,
+    "symptoms": "58-year-old COPD patient with severe dyspnea, unable to speak full sentences, O2 sat 82%, using accessory muscles, cyanotic",
+    "medical_history": "COPD, ex-smoker",
+    "triage_level": "emergency",
+    "rationale": "Acute respiratory failure, immediate oxygen and treatment"
+  },
+  {
+    "case_id": 902,
+    "protocol_category": "Breathing_Problems",
+    "patient_age": 35,
+    "symptoms": "35-year-old asthmatic with severe wheezing, chest tightness, used rescue inhaler 5 times, no relief, difficulty breathing",
+    "medical_history": "Asthma, multiple hospitalizations",
+    "triage_level": "emergency",
+    "rationale": "Severe asthma exacerbation, status asthmaticus risk"
+  },
+  {
+    "case_id": 903,
+    "protocol_category": "Cough",
+    "patient_age": 62,
+    "symptoms": "62-year-old with productive cough with yellow-green sputum, fever 38.8°C, dyspnea on exertion, history of COPD",
+    "medical_history": "COPD, hypertension",
+    "triage_level": "urgent",
+    "rationale": "Likely COPD exacerbation with infection"
+  },
+  {
+    "case_id": 904,
+    "protocol_category": "Cough",
+    "patient_age": 45,
+    "symptoms": "45-year-old with persistent dry cough 2 weeks, worsening dyspnea, fever, night sweats",
+    "medical_history": "No chronic respiratory disease",
+    "triage_level": "urgent",
+    "rationale": "Possible pneumonia or TB, needs workup"
+  },
+  {
+    "case_id": 905,
+    "protocol_category": "Cough",
+    "patient_age": 40,
+    "symptoms": "40-year-old with cough and mild dyspnea for 5 days, low-grade fever, productive cough",
+    "medical_history": "Healthy, non-smoker",
+    "triage_level": "moderate",
+    "rationale": "Upper respiratory infection or bronchitis"
+  },
+  {
+    "case_id": 906,
+    "protocol_category": "Cough",
+    "patient_age": 28,
+    "symptoms": "28-year-old with mild cough for 2 days, no fever, no dyspnea, asking about cough remedies",
+    "medical_history": "Healthy",
+    "triage_level": "home_care",
+    "rationale": "Mild URI, home management appropriate"
+  }
+]

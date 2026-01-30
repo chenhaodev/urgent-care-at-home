@@ -1,20 +1,56 @@
 [
   {
-    "case_id": 700,
-    "protocol_category": "Chest Pain",
-    "patient_age": 50,
-    "symptoms": "chest pain - emergency case",
-    "medical_history": "Test case",
+    "case_id": 1,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 65,
+    "symptoms": "Severe shortness of breath at rest, orthopnea, frothy pink sputum, bilateral leg edema",
+    "medical_history": "History of CHF, hypertension, diabetes",
     "triage_level": "emergency",
-    "rationale": "Test emergency case for CHF Nurse"
+    "rationale": "Acute pulmonary edema, immediate intervention needed"
   },
   {
-    "case_id": 701,
+    "case_id": 2,
     "protocol_category": "Chest Pain",
-    "patient_age": 45,
-    "symptoms": "chest pain - urgent case",
-    "medical_history": "Test case",
+    "patient_age": 72,
+    "symptoms": "Chest pain, severe dyspnea, cold extremities, blood pressure 85/50, heart rate 120",
+    "medical_history": "CHF, previous MI",
+    "triage_level": "emergency",
+    "rationale": "Cardiogenic shock, critical instability"
+  },
+  {
+    "case_id": 3,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 68,
+    "symptoms": "Weight gain 5kg in 2 days, increasing dyspnea on exertion, ankle swelling worsening",
+    "medical_history": "Known CHF on diuretics",
     "triage_level": "urgent",
-    "rationale": "Test urgent case for CHF Nurse"
+    "rationale": "CHF exacerbation, needs medical evaluation within hours"
+  },
+  {
+    "case_id": 4,
+    "protocol_category": "Shortness of Breath",
+    "patient_age": 58,
+    "symptoms": "Missed diuretic doses for 3 days, now with dyspnea, orthopnea, leg swelling",
+    "medical_history": "CHF, medication non-compliance",
+    "triage_level": "urgent",
+    "rationale": "Fluid overload from medication non-compliance"
+  },
+  {
+    "case_id": 5,
+    "protocol_category": "Swelling",
+    "patient_age": 55,
+    "symptoms": "Mild increase in ankle swelling, slight increase in dyspnea with exertion",
+    "medical_history": "Controlled CHF on medications",
+    "triage_level": "moderate",
+    "rationale": "Early signs of decompensation, outpatient evaluation needed"
+  },
+  {
+    "case_id": 6,
+    "protocol_category": "CHF Management",
+    "patient_age": 60,
+    "symptoms": "Stable, taking medications regularly, asking about dietary sodium guidelines",
+    "medical_history": "Stable CHF",
+    "triage_level": "home_care",
+    "rationale": "Routine CHF management question, education needed"
   }
 ]
