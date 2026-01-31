@@ -51,8 +51,8 @@ def export_production_agent():
             print(f"  - {f}")
         print("\nRun these commands first:")
         print("  1. uv run python protocols/parser.py")
-        print("  2. uv run python dataset/generator.py")
-        print("  3. uv run python optimization/compile.py")
+        print("  2. uv run python dataset/specialized_generator.py")
+        print("  3. uv run python optimization/compile_specialized.py")
         return False
 
     # Save package metadata

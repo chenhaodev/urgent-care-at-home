@@ -76,7 +76,7 @@ def optimize_triage_agent(
     if not cases_path.exists():
         raise FileNotFoundError(
             f"Cases file not found: {cases_path}. "
-            "Run: uv run python dataset/generator.py"
+            "Run: uv run python dataset/specialized_generator.py"
         )
 
     with open(cases_path, "r", encoding="utf-8") as f:
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\nError during optimization: {e}")
         print("\nMake sure:")
-        print("1. Dataset exists: uv run python dataset/generator.py")
+        print("1. Dataset exists: uv run python dataset/specialized_generator.py")
         print("2. Protocols parsed: uv run python protocols/parser.py")
         print("3. DeepSeek API key set in .env file")
         raise

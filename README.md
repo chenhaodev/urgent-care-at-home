@@ -42,8 +42,7 @@ cd stcc_triage_agent
 uv sync
 
 # Or install specific packages
-uv pip install -r requirements.txt
-
+# Configure API key
 # Configure API key
 cp .env.example .env
 # Edit .env and add: DEEPSEEK_API_KEY=your_key_here
@@ -56,7 +55,6 @@ cp .env.example .env
 uv run python protocols/parser.py
 
 # Generate specialized training datasets for all nurses
-uv run python dataset/specialized_generator_simple.py
 ```
 
 **Output:**
@@ -320,42 +318,63 @@ Select nurse from dropdown, test different symptoms.
 stcc_triage_agent/
 ├── protocols/
 │   ├── parser.py                    # Parse STCC markdown → JSON
-│   └── protocols.json               # 225 digitized protocols (generated)
+│   ├── STCC-chinese/                # 225 clinical protocols (markdown)
+│   └── protocols.json               # Digitized protocols (generated)
 │
 ├── dataset/
+│   ├── case_data/                   # Source case definitions (Python)
+│   │   ├── wound_care_cases.py
+│   │   ├── ob_cases.py
+│   │   └── ... (10 specializations)
 │   ├── nurse_roles.py               # 10 nurse role definitions
-│   ├── specialized_generator.py     # Full case generator
-│   ├── specialized_generator_simple.py  # Quick test data
-│   ├── cases_wound_care_nurse.json  # Training data (generated)
-│   ├── cases_ob_nurse.json
-│   ├── cases_neuro_nurse.json
-│   └── ... (10 nurse datasets)
+│   ├── specialized_generator.py     # Case dataset generator
+│   ├── schema.py                    # PatientCase data model
+│   ├── cases_wound_care_nurse.json  # Generated training data
+│   └── ... (10 nurse datasets, generated)
 │
 ├── agent/
-│   ├── signature.py                 # DSPy input/output
-│   ├── settings.py                  # DeepSeek config
-│   └── triage_agent.py              # Main agent
+│   ├── signature.py                 # DSPy input/output signatures
+│   ├── settings.py                  # DeepSeek LLM configuration
+│   └── triage_agent.py              # Main STCCTriageAgent class
 │
 ├── optimization/
-│   ├── metric.py                    # Safety metric (0 tolerance for missed emergencies)
-│   ├── optimizer.py                 # BootstrapFewShot config
-│   ├── compile.py                   # Generic compilation
-│   └── compile_specialized.py       # ⭐ Compile specific nurses
+│   ├── metric.py                    # Safety metric (zero-tolerance for missed emergencies)
+│   ├── optimizer.py                 # BootstrapFewShot configuration
+│   └── compile_specialized.py       # Nurse-specific compilation pipeline
 │
 ├── deployment/
-│   ├── api.py                       # Basic API
-│   ├── specialized_api.py           # ⭐ Multi-nurse API
-│   ├── compiled_wound_care_nurse_agent.json  # Optimized (generated)
-│   ├── compiled_ob_nurse_agent.json
-│   └── ... (10 compiled agents)
+│   ├── specialized_api.py           # FastAPI multi-nurse endpoints
+│   ├── export.py                    # Model export utilities
+│   ├── compiled_*_nurse_agent.json  # Optimized agents (generated)
+│   └── ...
+│
+├── ui/
+│   ├── streamlit_app.py             # Main Streamlit app
+│   ├── components/                  # Modular UI components
+│   │   ├── sidebar.py
+│   │   ├── chat.py
+│   │   ├── triage_card.py
+│   │   ├── optimization.py
+│   │   └── about.py
+│   ├── state.py                     # Session state management
+│   └── utils.py                     # UI utilities
 │
 ├── examples/
-│   ├── basic_triage.py              # Simple demo
-│   └── specialized_nurses_demo.py   # ⭐ Multi-nurse demo
+│   ├── basic_triage.py              # Simple usage demo
+│   └── specialized_nurses_demo.py   # Multi-nurse demonstration
 │
-└── validation/
-    ├── test_agent.py                # Unit tests
-    └── edge_cases.py                # Red-flag tests
+├── tests/
+│   └── test_parser.py               # Protocol parser tests
+│
+├── scripts/
+│   ├── run_ui.sh                    # Streamlit launcher
+│   └── verify_setup.py              # Repository verification
+│
+├── pyproject.toml                   # Project configuration & dependencies
+├── .env.example                     # Environment template
+├── README.md                        # Main documentation
+└── AUTO.md                          # Architecture & features
+
 ```
 
 ---
@@ -366,14 +385,13 @@ stcc_triage_agent/
 
 **Step 1:** Install & setup (5 min)
 ```bash
-pip install -r requirements.txt
+uv sync  # Install all dependencies
 cp .env.example .env  # Add your DEEPSEEK_API_KEY
 ```
 
 **Step 2:** Generate data (2 min)
 ```bash
 python protocols/parser.py
-python dataset/specialized_generator_simple.py
 ```
 
 **Step 3:** Optimize ONE nurse (5-10 min)
@@ -452,7 +470,6 @@ ls protocols/STCC-chinese/*.md
 ### "Cases file not found"
 ```bash
 # Generate datasets first
-python dataset/specialized_generator_simple.py
 ```
 
 ### "Compiled agent not found"
@@ -516,7 +533,6 @@ MIT License - Educational and research use only. NOT approved for clinical use.
 ```bash
 # Generate data
 python protocols/parser.py
-python dataset/specialized_generator_simple.py
 
 # Optimize specific nurse
 python optimization/compile_specialized.py --role wound_care_nurse

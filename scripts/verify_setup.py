@@ -39,10 +39,8 @@ def main():
     # Configuration
     print("\n⚙️ Configuration Files:")
     checks.append(check_file_exists(Path("pyproject.toml"), "Project Config"))
-    checks.append(check_file_exists(Path("requirements.txt"), "Requirements"))
     checks.append(check_file_exists(Path(".gitignore"), "Git Ignore"))
     checks.append(check_file_exists(Path(".env.example"), "Env Template"))
-
 
     # Core Modules
     print("\n🐍 Core Python Modules:")
@@ -51,16 +49,17 @@ def main():
         "agent/signature.py",
         "agent/settings.py",
         "protocols/parser.py",
-        "dataset/generator.py",
         "dataset/schema.py",
+        "dataset/nurse_roles.py",
+        "dataset/specialized_generator.py",
         "optimization/metric.py",
         "optimization/optimizer.py",
-        "optimization/compile.py",
-        "validation/test_agent.py",
-        "validation/edge_cases.py",
-        "deployment/api.py",
+        "optimization/compile_specialized.py",
+        "deployment/specialized_api.py",
         "deployment/export.py",
         "examples/basic_triage.py",
+        "examples/specialized_nurses_demo.py",
+        "tests/test_parser.py",
     ]
 
     for module in modules:
