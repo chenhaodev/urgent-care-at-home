@@ -6,7 +6,7 @@ Displays optimization controls and status (placeholder for CLI-based optimizatio
 
 import streamlit as st
 
-from stcc_triage.datasets.nurse_roles import NurseRole, get_specialization
+from stcc_triage.nurses.roles import NurseRole, get_specialization
 from stcc_triage.ui.utils import is_agent_optimized
 
 

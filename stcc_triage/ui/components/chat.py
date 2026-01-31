@@ -26,7 +26,7 @@ def render_chat():
 
     # Display loaded nurse info
     if st.session_state.loaded_nurse_role:
-        from stcc_triage.datasets.nurse_roles import get_specialization
+        from stcc_triage.nurses.roles import get_specialization
 
         spec = get_specialization(st.session_state.loaded_nurse_role)
         st.success(f"**Active Nurse:** {spec.display_name}")

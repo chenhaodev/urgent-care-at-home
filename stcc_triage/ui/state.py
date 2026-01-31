@@ -6,7 +6,7 @@ Manages nurse selection, chat history, and optimization processes.
 
 import streamlit as st
 
-from stcc_triage.datasets.nurse_roles import NurseRole
+from stcc_triage.nurses.roles import NurseRole
 
 
 def init_session_state():

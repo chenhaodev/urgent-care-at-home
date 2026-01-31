@@ -6,7 +6,7 @@ Handles nurse selection, loading, and optimization controls.
 
 import streamlit as st
 
-from stcc_triage.datasets.nurse_roles import NURSE_SPECIALIZATIONS, NurseRole, get_specialization
+from stcc_triage.nurses.roles import NURSE_SPECIALIZATIONS, NurseRole, get_specialization
 from stcc_triage.ui.utils import is_agent_optimized, load_nurse_agent
 
 
