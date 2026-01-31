@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dspy-stcc-homecare"
-version = "2.0.0"
+version = "2.0.1"
 description = "DSPy extension for STCC medical triage with specialized nurses"
 readme = "README.md"
 requires-python = ">=3.11"

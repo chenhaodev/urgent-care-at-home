@@ -57,7 +57,7 @@ def render_about():
 
     **To optimize a nurse:**
     ```bash
-    python optimization/compile_specialized.py --role wound_care_nurse
+    stcc-optimize --role wound_care_nurse
     ```
 
     ### Technology Stack

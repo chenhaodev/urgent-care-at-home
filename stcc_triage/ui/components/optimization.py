@@ -86,7 +86,7 @@ def render_optimization():
 
     st.code(
         f"# Optimize {spec.display_name}\n"
-        f"uv run python optimization/compile_specialized.py --role {selected_role.value}",
+        f"stcc-optimize --role {selected_role.value}",
         language="bash",
     )
 
@@ -99,7 +99,7 @@ def render_optimization():
 
     st.code(
         "# Optimize all 10 nurse specializations (1-2 hours)\n"
-        "uv run python optimization/compile_specialized.py",
+        "stcc-optimize",
         language="bash",
     )
 
@@ -107,7 +107,7 @@ def render_optimization():
 
     st.code(
         f"# Regenerate data and optimize\n"
-        f"uv run python optimization/compile_specialized.py --role {selected_role.value} --regenerate-data",
+        f"stcc-optimize --role {selected_role.value} --regenerate-data",
         language="bash",
     )
 

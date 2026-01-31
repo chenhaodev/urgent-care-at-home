@@ -39,7 +39,7 @@ def demo_specialized_nurse(role: NurseRole, symptoms: str):
         print(f"\n✓ Using optimized {spec.display_name} agent")
         agent.triage_module.load(str(compiled_path))
     else:
-        print(f"\n⚠ Using baseline agent (optimize with: python optimization/compile_specialized.py --role {role.value})")
+        print(f"\n⚠ Using baseline agent (optimize with: stcc-optimize --role {role.value})")
 
     # Perform triage
     try:
@@ -145,7 +145,7 @@ def main():
         print(f"   Triage: {result_chf.triage_level}")
         print(f"   Reasoning: {result_chf.clinical_justification[:150]}...")
     else:
-        print("   ⚠ Not optimized yet - run: python optimization/compile_specialized.py --role chf_nurse")
+        print("   ⚠ Not optimized yet - run: stcc-optimize --role chf_nurse")
 
     print("\n" + "=" * 70)
     print("Demo Complete!")

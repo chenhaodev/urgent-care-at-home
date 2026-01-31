@@ -30,7 +30,7 @@ def main():
         print(f"Loading optimized agent from {compiled_path}")
         agent.triage_module.load(str(compiled_path))
     else:
-        print("Using base agent (run optimization/compile_specialized.py to optimize)")
+        print("Using base agent (run 'stcc-optimize' to optimize)")
 
     # Test cases
     test_cases = [

@@ -86,7 +86,7 @@ def render_sidebar():
         st.info(
             "Optimization is a long-running process. "
             "Please use the command line:\n\n"
-            f"`uv run python optimization/compile_specialized.py --role {selected_role.value}`"
+            f"`stcc-optimize --role {selected_role.value}`"
         )
 
     # Optimize all button
@@ -94,7 +94,7 @@ def render_sidebar():
         st.info(
             "Optimizing all nurses takes 1-2 hours. "
             "Please use the command line:\n\n"
-            "`uv run python optimization/compile_specialized.py`"
+            "`stcc-optimize`"
         )
 
     # Show optimization status
